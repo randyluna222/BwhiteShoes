@@ -64,3 +64,55 @@ function funcionEjecutar(side){
    elements[siguienteElement].style.opacity=1;
    elements[siguienteElement].style.zIndex =1;
 }
+
+
+
+
+
+////////------------------Para compartir-------------------------------------------------
+
+
+
+// Obtener el botón de compartir
+const shareBtn = document.querySelector('.share-btn');
+
+// Agregar un evento de clic al botón de compartir
+shareBtn.addEventListener('click', function() {
+  // Obtener el enlace de la página actual
+  const currentPageUrl = window.location.href;
+  
+  // Intentar abrir la ventana de compartir en WhatsApp
+  const whatsappUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(currentPageUrl)}`;
+  window.open(whatsappUrl, '_blank');
+});
+
+///-------------------------------Rederigir Página---------------------------------------
+
+
+// Obtener todos los botones "Add To Cart"
+const addToCartButtons = document.querySelectorAll('.btn');
+
+// Iterar sobre cada botón "Add To Cart"
+addToCartButtons.forEach(button => {
+  // Agregar un evento de clic a cada botón
+  button.addEventListener('click', function(event) {
+    // Evitar que se ejecute la acción predeterminada del enlace
+    event.preventDefault();
+    
+    // Obtener los detalles del producto
+    const productCard = this.closest('.card');
+    const productImage = productCard.querySelector('.image img').src;
+    const productTitle = productCard.querySelector('.products_text h2').innerText;
+    const productDescription = productCard.querySelector('.products_text p').innerText;
+    const productPrice = productCard.querySelector('.products_text h3').innerText;
+
+    // Almacenar los detalles del producto en el almacenamiento local
+    localStorage.setItem('productTitle', productTitle);
+    localStorage.setItem('productImage', productImage);
+    localStorage.setItem('productDescription', productDescription);
+    localStorage.setItem('productPrice', productPrice);
+
+    // Redirigir a la página de destino
+    window.location.href = 'pagina-de-destino.html';
+  });
+});

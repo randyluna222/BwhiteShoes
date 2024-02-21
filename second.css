@@ -1,0 +1,207 @@
+*{
+  font-family: sans-serif;
+}
+
+header nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.6);
+  background: #fff8f8a8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+header nav .logo{
+  width: 10%;
+  cursor: pointer;
+  position: relative;
+  left: 3%;
+}
+
+
+header nav ul{
+  list-style: none;
+  margin-left: -328px;
+}
+
+header nav ul li{
+  display: inline-block;
+  margin: 5px 15px;
+}
+
+header nav ul li a{
+  text-decoration: none;
+  color: black;
+  transition: 0.2s;
+}
+
+header nav ul li a:hover{
+  color: #c72092;
+}
+
+header nav .icons i{
+  margin: 0px 4px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+header nav .icons i:hover{
+  color: #c72092;
+}
+
+
+
+.product-container {
+  display: flex; /* Utilizamos flexbox para establecer el contenedor como un flex container */
+  padding-top: 150px;
+  box-sizing: border-box;
+}
+
+.product{
+  display: block;
+  margin-left: 150px;
+  justify-content: center;
+  align-items: center; 
+  box-sizing: border-box;
+  margin-right: 150px;
+  width: 31%;
+}
+
+.product p{
+  width: 60%;
+}
+
+
+img{
+  width: 30%;
+  display: flex;
+  margin-right: 320px;
+}
+
+.product button{
+    width: 41%;
+    height: 31px;
+    display: flex;
+    background-color: #000;
+    color: #ffffff;
+    padding: 0.5rem 1.4rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    border-radius: 0.5rem;
+    gap: 0.75rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: .6s ease;
+}
+
+.product .button:hover {
+  box-shadow: none;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+
+
+  .product-container{
+    padding-top: 68px;
+  }
+
+  .product{
+    margin-left: 108px
+  }
+
+  .product p{
+    width: 172%;
+  }
+  
+  .product button{
+    width: 96%;
+  }
+  header nav .logo{
+    left: 35%;
+    bottom: 5%;
+    margin-bottom: 5px;
+  }
+  
+  section nav ul {
+    display: none; /* Oculta la lista de elementos de navegación */
+  }
+
+  .nav-links {
+    display: none; /* Oculta los enlaces de navegación en modo móvil */
+  }
+  
+  /* Estilo para el ícono de menú */
+  .menu-icon {
+    display: block; /* Muestra el ícono de menú */
+    font-size: 24px; /* Tamaño del ícono de menú */
+    color: #c72092;
+    margin-right: -220px; /* Margen derecho para separarlo del resto de elementos */
+    cursor: pointer;
+    position: relative;
+    right: 80%;
+  }
+
+  .menu-items {
+    display: none; /* Oculta inicialmente el menú */
+    list-style: none;
+    margin: 0;
+    padding: 23px 115px;
+    position: absolute;
+    top: 100%; /* Posiciona el menú justo debajo del nav */
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para el menú */
+    z-index: 99; /* Asegura que el menú esté sobre otros elementos */
+    overflow: hidden; /* Oculta el desbordamiento del menú */
+    transition: max-height 0.3s ease-out; /* Agrega una transición suave */
+}
+
+.menu-items li {
+  padding: 10px 0;
+  text-align: center;
+  border-bottom: 1px solid #ccc; /* Línea divisoria entre elementos */
+}
+
+.menu-items li:last-child {
+  border-bottom: none; /* Quita la línea divisoria en el último elemento */
+}
+.menu-items li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu-items li a:hover {
+  color: #c72092; /* Cambia el color del texto al pasar el mouse */
+}
+
+section .main .main_content .main_text {
+  margin-top: 120px;
+  margin-right: -81px; /* Espacio adicional encima del texto */
+}
+
+section .main .social_icon{
+  left: 94%;
+}
+}
+
+@media only screen and (min-width: 601px) {
+  .menu-icon::before {
+    display: none; /* Oculta el icono de menú en modo desktop */
+  }
+}

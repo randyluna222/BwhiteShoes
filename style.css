@@ -23,7 +23,9 @@ html{
   background: linear-gradient(to top, #c72092, #6c14d0);
 }
 
-
+.share-btn{
+  display: none;
+}
 
 section{
   width: 100%;
@@ -33,7 +35,7 @@ section{
   background-position: center;
 }
 
-section nav{
+header nav{
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -46,7 +48,7 @@ section nav{
   z-index: 100;
 }
 
-section nav .logo{
+header nav .logo{
   width: 10%;
   cursor: pointer;
   position: relative;
@@ -54,34 +56,34 @@ section nav .logo{
 }
 
 
-section nav ul{
+header nav ul{
   list-style: none;
   margin-left: -328px;
 }
 
-section nav ul li{
+header nav ul li{
   display: inline-block;
   margin: 5px 15px;
 }
 
-section nav ul li a{
+header nav ul li a{
   text-decoration: none;
   color: black;
   transition: 0.2s;
 }
 
-section nav ul li a:hover{
+header nav ul li a:hover{
   color: #c72092;
 }
 
-section nav .icons i{
+header nav .icons i{
   margin: 0px 4px;
   cursor: pointer;
   font-size: 18px;
   transition: 0.3s;
 }
 
-section nav .icons i:hover{
+header nav .icons i:hover{
   color: #c72092;
 }
 
@@ -648,8 +650,13 @@ footer .footer_main .tag a:hover{
 
 /* Estilos para dispositivos móviles */
 @media screen and (max-width: 600px) {
-  
-  section nav ul {
+
+  header nav .logo{
+    left: 23%;
+    bottom: 5%;
+    margin-bottom: 3px;
+  }
+  header nav ul {
     display: none; /* Oculta la lista de elementos de navegación */
   }
 
@@ -670,7 +677,7 @@ footer .footer_main .tag a:hover{
     display: none; /* Oculta inicialmente el menú */
     list-style: none;
     margin: 0;
-    padding: 22px 61px;
+    padding: 23px 115px;
     position: absolute;
     top: 100%; /* Posiciona el menú justo debajo del nav */
     left: 0;

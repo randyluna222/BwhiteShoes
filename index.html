@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <section>
+  <header>
     <nav>
    
         <img class="logo" src="./src/logo-sin-fondo.png" alt="logo store">
@@ -30,7 +30,7 @@
         </div>
     </nav>
 <!--------------------------------------------------------->
-
+</header>
 
 
 <section id="container-slider">    
@@ -108,26 +108,31 @@
 
     <div class="box">
       <div class="card">
-        <div class="small_card">
-          <i class="fa-solid fa-heart"></i>
-          <i class="fa-solid fa-share"></i>
-        </div>
-        <div class="image">
-          <img src="./src/shoes1.png" alt="img shoe">
-        </div>
-        <div class="products_text">
-          <h2>NIKE</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <h3>$888</h3>
-          <div class="products_star">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-          </div>
-          <a href="#" class="btn">Add To cart</a>
-        </div>
-      </div>
+  <div class="small_card">
+    <i class="fa-solid fa-heart"></i>
+    <i class="fa-solid fa-share share-button"></i>
+  </div>
+  <div class="image">
+    <!-- Asignar ID a la imagen -->
+    <img id="product-image" src="./src/shoes1.png" alt="img shoe">
+  </div>
+  <div class="products_text">
+    <!-- Asignar IDs a cada elemento de texto -->
+    <h2 id="product-title">NIKE</h2>
+    <p id="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit Vero ipsa quasi.
+      </p>
+    <h3 id="product-price">$889</h3>
+    <div class="products_star">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+    </div>
+    <button class="share-btn">Compartir</button>
+    <a href="pagina-de-destino.html?product=nike" class="btn">Ver Producto</a>
+  </div>
+</div>
+
       <div class="card">
         <div class="small_card">
           <i class="fa-solid fa-heart"></i>
@@ -137,16 +142,16 @@
           <img src="./src/shoes2.png" alt="img shoe">
         </div>
         <div class="products_text">
-          <h2>NIKE</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <h3>$888</h3>
+          <h2 id="product-title">NIKE</h2>
+          <p>eeeeeeeeeee.</p>
+          <h3 id="product-price">$888</h3>
           <div class="products_star">
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
           </div>
-          <a href="#" class="btn">Add To cart</a>
+          <a href="pagina-de-destino.html?product=nike" class="btn">Ver Producto</a>
         </div>
       </div>
       <div class="card">
@@ -158,16 +163,16 @@
           <img src="./src/shoes3.png" alt="img shoe">
         </div>
         <div class="products_text">
-          <h2>NIKE</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <h3>$888</h3>
+          <h2 id="product-title">NIKE</h2>
+          <p>ooooooooooooooooo.</p>
+          <h3 id="product-price">$99</h3>
           <div class="products_star">
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
           </div>
-          <a href="#" class="btn">Add To cart</a>
+          <a href="pagina-de-destino.html?product=nike" class="btn">Ver Producto</a>
         </div>
       </div>
       <div class="card">
@@ -179,7 +184,7 @@
           <img src="./src/shoes4.png" alt="img shoe">
         </div>
         <div class="products_text">
-          <h2>NIKE</h2>
+          <h2 id="product-title">NIKE</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <h3>$888</h3>
           <div class="products_star">
@@ -188,7 +193,7 @@
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
           </div>
-          <a href="#" class="btn">Add To cart</a>
+          <a href="pagina-de-destino.html?product=nike" class="btn">Ver Producto</a>
         </div>
       </div>
       <div class="card">
@@ -200,7 +205,7 @@
           <img src="./src/shoes5.png" alt="img shoe">
         </div>
         <div class="products_text">
-          <h2>NIKE</h2>
+          <h2 id="product-title">NIKE</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <h3>$888</h3>
           <div class="products_star">
@@ -209,7 +214,7 @@
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
           </div>
-          <a href="#" class="btn">Add To cart</a>
+          <a href="pagina-de-destino.html?product=nike" class="btn">Ver Producto</a>
         </div>
       </div><div class="card">
         <div class="small_card">
@@ -220,7 +225,7 @@
           <img src="./src/shoes6.png" alt="img shoe">
         </div>
         <div class="products_text">
-          <h2>NIKE</h2>
+          <h2 id="product-title">NIKE</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <h3>$888</h3>
           <div class="products_star">
@@ -229,7 +234,7 @@
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
           </div>
-          <a href="#" class="btn">Add To cart</a>
+          <a href="pagina-de-destino.html?product=nike" class="btn">Ver Producto</a>
         </div>
       </div><div class="card">
         <div class="small_card">
@@ -240,7 +245,7 @@
           <img src="./src/shoes7.png" alt="img shoe">
         </div>
         <div class="products_text">
-          <h2>NIKE</h2>
+          <h2 id="product-title">NIKE</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <h3>$888</h3>
           <div class="products_star">
@@ -249,7 +254,7 @@
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
           </div>
-          <a href="#" class="btn">Add To cart</a>
+          <a href="pagina-de-destino.html?product=nike" class="btn">Ver Producto</a>
         </div>
       </div><div class="card">
         <div class="small_card">
@@ -269,7 +274,7 @@
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
           </div>
-          <a href="#" class="btn">Add To cart</a>
+          <a href="pagina-de-destino.html?product=nike" class="btn">Ver Producto</a>
         </div>
       </div>
     </div>
